@@ -1,14 +1,115 @@
 body {
-    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #1A2533 0%, #2B3A67 100%);
+    color: #1F2937;
 }
-h1 {
-    color: #343a40;
+
+.bg-navy {
+    background: transparent;
 }
-#totp-code {
-    font-size: 2.5rem;
-    color: #007bff;
+
+.bg-card {
+    background: #F7F9FC;
+    border-radius: 12px;
 }
-#result.alert {
-    max-width: 400px;
-    margin: auto;
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+.btn-outline-secondary {
+    border-color: #D1D5DB;
+    color: #4B5EAA;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #F3F4F6;
+    color: #1F2937;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    padding: 12px;
+    background: #FFFFFF;
+}
+
+.form-control:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.text-primary {
+    color: #3B82F6 !important;
+}
+
+.text-muted {
+    color: #6B7280 !important;
+}
+
+.progress-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.progress-circle svg {
+    transform: rotate(-90deg);
+}
+
+.progress-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    color: #1F2937;
+}
+
+#progress-ring {
+    transition: stroke-dashoffset 1s linear;
+}
+
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+}
+
+.toast {
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.toast.bg-success {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF;
+}
+
+.toast.bg-danger {
+    background-color: #EF4444 !important;
+    color: #FFFFFF;
+}
+
+.btn-close {
+    filter: brightness(100%);
 }
