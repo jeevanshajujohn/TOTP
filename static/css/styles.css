@@ -1,16 +1,20 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(180deg, #1A2533 0%, #2B3A67 100%);
-    color: #1F2937;
+    background: linear-gradient(180deg, #000000 0%, #0A0E1A 100%); /* Black to Deep Black-Blue */
+    color: #BFDBFE;
 }
 
-.bg-navy {
+.bg-black {
     background: transparent;
 }
 
-.bg-card {
-    background: #F7F9FC;
+.bg-slate {
+    background: #111827; /* Midnight Slate */
     border-radius: 12px;
+}
+
+.bg-dark-input {
+    background: #1F2A44; /* Gunmetal Blue */
 }
 
 .card {
@@ -19,52 +23,57 @@ body {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .btn-primary {
-    background-color: #3B82F6;
-    border-color: #3B82F6;
+    background-color: #1E40AF; /* Sapphire Blue */
+    border-color: #1E40AF;
     border-radius: 8px;
     padding: 12px;
     font-weight: 500;
 }
 
 .btn-primary:hover {
-    background-color: #2563EB;
-    border-color: #2563EB;
+    background-color: #15308F;
+    border-color: #15308F;
 }
 
-.btn-outline-secondary {
-    border-color: #D1D5DB;
-    color: #4B5EAA;
+.btn-outline-teal {
+    border-color: #0B7285; /* Obsidian Teal */
+    color: #0B7285;
     border-radius: 8px;
     padding: 12px;
 }
 
-.btn-outline-secondary:hover {
-    background-color: #F3F4F6;
-    color: #1F2937;
+.btn-outline-teal:hover {
+    background-color: #0B7285;
+    color: #BFDBFE;
 }
 
 .form-control {
     border-radius: 8px;
-    border: 1px solid #D1D5DB;
+    border: 1px solid #1F2A44; /* Gunmetal Blue */
     padding: 12px;
-    background: #FFFFFF;
+    background: #1F2A44;
+    color: #BFDBFE;
 }
 
 .form-control:focus {
-    border-color: #3B82F6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    border-color: #1E40AF;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.3);
 }
 
 .text-primary {
-    color: #3B82F6 !important;
+    color: #1E40AF !important;
 }
 
-.text-muted {
-    color: #6B7280 !important;
+.text-frost {
+    color: #BFDBFE !important; /* Frost Blue */
+}
+
+.text-dim {
+    color: #6B7280 !important; /* Dim Blue */
 }
 
 .progress-circle {
@@ -83,7 +92,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 500;
-    color: #1F2937;
+    color: #BFDBFE;
 }
 
 #progress-ring {
@@ -101,15 +110,15 @@ body {
 }
 
 .toast.bg-success {
-    background-color: #3B82F6 !important;
-    color: #FFFFFF;
+    background-color: #047857 !important; /* Dark Emerald */
+    color: #BFDBFE;
 }
 
 .toast.bg-danger {
-    background-color: #EF4444 !important;
-    color: #FFFFFF;
+    background-color: #991B1B !important; /* Dark Crimson */
+    color: #BFDBFE;
 }
 
-.btn-close {
-    filter: brightness(100%);
+.btn-close-light {
+    filter: brightness(200%);
 }
